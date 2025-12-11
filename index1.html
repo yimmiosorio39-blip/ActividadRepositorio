@@ -1,1 +1,50 @@
-.
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <header id="header">
+        <!-- LOGO -->
+        <div id="logo"> <img src="https://cdn-icons-png.flaticon.com/512/25/25694.png">
+            <h1>Proyecto Web del Grupo</h1>
+        </div> <!-- MENÚ DE NAVEGACIÓN -->
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Quiénes Somos</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav> <!-- PERFIL + INICIO DE SESIÓN -->
+        <div class="right-section">
+            <div id="profile-btn"> <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png"> <span>Perfil</span>
+            </div>
+        </div>
+    </header>
+    <!-- FORMULARIO DE INICIO DE SESIÓN (OCULTO) -->
+<div id="login-modal" class="modal">
+    <div class="modal-content">
+        <span id="cerrar" class="cerrar">&times;</span>
+        <h2>Iniciar Sesión</h2>
+
+        <form>
+            <label>Usuario:</label>
+            <input type="text" placeholder="Ingrese su usuario" required>
+
+            <label>Contraseña:</label>
+            <input type="password" placeholder="Ingrese su contraseña" required>
+
+            <button type="submit" class="btn-login">Entrar</button>
+        </form>
+    </div>
+</div>
+<script src="script.js"></script>
+
+</body>
+
+</html>
