@@ -1,1 +1,67 @@
-.
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Iniciar sesión</title>
+  <link rel="stylesheet" href="estilos1.css">
+</head>
+<body>
+  <main class="page">
+    <section class="card" aria-labelledby="login-title">
+      <h1 id="login-title" class="card__title">Iniciar sesión</h1>
+
+      <!-- Formulario: método POST para enviar datos al servidor -->
+      <form class="form" action="/login" method="post" novalidate>
+        <!-- Campo correo/usuario -->
+        <label class="field">
+          <span class="field__label">Correo electrónico</span>
+          <input
+            class="field__input"
+            type="email"
+            name="email"
+            placeholder="tu@correo.com"
+            required
+            autocomplete="email"
+            aria-required="true"
+          >
+          <span class="field__hint">Introduce un correo válido</span>
+        </label>
+
+        <!-- Campo contraseña -->
+        <label class="field">
+          <span class="field__label">Contraseña</span>
+          <input
+            class="field__input"
+            type="password"
+            name="password"
+            placeholder="••••••••"
+            required
+            autocomplete="current-password"
+            aria-required="true"
+            minlength="6"
+          >
+          <span class="field__hint">Mínimo 6 caracteres</span>
+        </label>
+
+        <!-- Recordarme y enlace de ayuda -->
+        <div class="extras">
+          <label class="checkbox">
+            <input type="checkbox" name="remember" />
+            <span>Recordarme</span>
+          </label>
+          <a class="link" href="/forgot">¿Olvidaste tu contraseña?</a>
+        </div>
+
+        <!-- Botón enviar -->
+        <button class="btn" type="submit">Entrar</button>
+
+        <!-- Opcional: registro -->
+        <p class="register">
+          ¿No tienes cuenta? <a class="link" href="/register">Regístrate</a>
+        </p>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
