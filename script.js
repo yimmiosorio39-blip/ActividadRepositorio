@@ -1,6 +1,8 @@
 
 document.getElementById("year").textContent = new Date().getFullYear();
 
+document.getElementById("year").textContent = new Date().getFullYear();
+
 console.log("Contenido del body cargado");
 
 
