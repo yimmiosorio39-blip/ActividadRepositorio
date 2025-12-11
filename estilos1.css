@@ -1,1 +1,28 @@
-.
+#contenido {
+    width: 80%;
+    margin: 30px auto;
+}
+
+.card {
+    background: #2b2b2b;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border-left: 5px solid #ff3b3b;
+    color: white;
+}
+
+.card img {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 15px auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Efecto hover */
+.card img:hover {
+    transform: scale(1.05);
+    filter: brightness(1.15);
+}
