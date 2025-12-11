@@ -1,10 +1,10 @@
+
 .footer {
   background-color: #222;
   color: #fff;
   padding: 20px 0;
   margin-top: 40px;
 }
-
 
 #contenido {
     width: 80%;
@@ -29,6 +29,7 @@
     transition: transform 0.3s ease, filter 0.3s ease;
 }
 
+/* Efecto hover */
 .card img:hover {
     transform: scale(1.05);
     filter: brightness(1.15);

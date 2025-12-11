@@ -1,3 +1,4 @@
+
 document.getElementById("year").textContent = new Date().getFullYear();
 
 console.log("Contenido del body cargado");
@@ -26,3 +27,4 @@ window.addEventListener("click", (e) => {
         modal.style.display = "none";
     }
 });
+console.log("Contenido del body cargado");
